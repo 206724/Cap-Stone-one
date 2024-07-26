@@ -51,7 +51,7 @@ export default function PhotoUploader({ addedPhotos, onChange }) {
       </div>
 
       <div className="mt-2 grid gap-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-        {addedPhotos.length > 0 &&
+        {addedPhotos && addedPhotos.length > 0 ? (
           addedPhotos.map((link) => (
             <div className="h-32 flex" key={link}>
               <img
@@ -60,7 +60,10 @@ export default function PhotoUploader({ addedPhotos, onChange }) {
                 alt=""
               />
             </div>
-          ))}
+          ))
+        ) : (
+          <p>No photos added</p>
+        )}
         <label className="h-32 cursor-pointer flex items-center gap-1 justify-center border bg-transparent rounded-2xl p-2 text-2xl text-gray-600">
           <input
             type="file"

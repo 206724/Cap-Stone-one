@@ -10,7 +10,7 @@ export default function RegisterPage() {
   async function registerUser(ev) {
     ev.preventDefault();
     try {
-      await axios.post('/register', { // Make sure the URL matches your backend server
+      await axios.post('/register', { 
         name,
         email,
         password,
