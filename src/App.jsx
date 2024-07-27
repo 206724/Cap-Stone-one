@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import IndexPage from "./Pages/IndexPage.jsx";
 import LoginPage from "./Pages/LoginPage.jsx";
 import RegisterPage from "./Pages/RegisterPage.jsx";
-import AccountPage from "./Pages/ProfilePage.jsx";
 import Layout from "./Layout.jsx";
 import axios from "axios";
 import { UserContextProvider } from "./UserContext.jsx";
@@ -10,6 +9,9 @@ import ProfilePage from "./Pages/ProfilePage.jsx";
 import PlacesPage from "./Pages/PlacesPage.jsx";
 import  PlacesFormPage from "./Pages/PlacesFormaPage.jsx";
 import PlacePage from "./Pages/PlacePage.jsx"
+import BookingsPage from "./Pages/BookingsPage.jsx";
+import BookingPage from "./Pages/BookingsPage.jsx";
+
 
 axios.defaults.baseURL = 'http://localhost:4000'
 axios.defaults.withCredentials=true;
@@ -27,6 +29,8 @@ function App() {
         <Route path="/account/places/new" element={<PlacesFormPage />} />
         <Route path="/account/places/:id" element={<PlacesFormPage />} />
         <Route path="/place/:id" element={<PlacePage />} />
+        <Route path="/account/bookings" element={<BookingsPage />} />
+        <Route path="/account/bookings/:id" element={<BookingPage />} />
 
        
         

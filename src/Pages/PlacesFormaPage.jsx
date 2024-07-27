@@ -1,5 +1,5 @@
 import PhotosUploader  from "../PhotoUploader.jsx"
-import Perks from "./Perks.jsx"
+import Perks from "../Perks.jsx"
 import {useEffect, useState} from "react";
 import axios from "axios";
 import AccountNav from "./AccountNav.jsx";
@@ -70,8 +70,8 @@ export default function PlacesFormPage() {
       setRedirect(true);
     } else {
       // new place
-      await axios.post('/places', placeData);
-      setRedirect(true);
+      // await axios.post('/places', placeData);
+      // setRedirect(true);
     }
 
   }
