@@ -69,7 +69,7 @@ export default function PlacesFormPage() {
       });
       setRedirect(true);
     } else {
-      new place
+      //new place.
       await axios.post('/places', placeData);
       setRedirect(true);
     }
