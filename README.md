@@ -115,8 +115,14 @@ This project is an Airbnb-like application built with the MERN (MongoDB, Express
    npm run dev
 
    ```
+ 4. **Open your browser and navigate to:**:
+
+    
+ ```
+    http://localhost:5173
 
 
+ ```
 
 ## Environment Variables
 
