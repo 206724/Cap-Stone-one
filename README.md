@@ -90,7 +90,7 @@ This project is an Airbnb-like application built with the MERN (MongoDB, Express
 
    # In the client directory (for client)
 
-   cd client
+   cd front-End
 
    npm install
 
@@ -104,15 +104,15 @@ This project is an Airbnb-like application built with the MERN (MongoDB, Express
 
    # In the root directory (for server)
 
-   npm run dev
+   nodemon index.js
 
 
 
    # In the client directory (for client)
 
-   cd client
+   cd front-End
 
-   npm start
+   npm run dev
 
    ```
 
@@ -174,7 +174,7 @@ JWT_SECRET=_jwt_secret
 
 
 
-- Navigate to the homepage to view all available listings
+- Navigate to the My accommodations  to view all available listings
 
 
 
@@ -262,7 +262,7 @@ my-app/
 
 ├── uploads/
 
-├── client/
+├── front-End/
 
 │   ├── public/
 
