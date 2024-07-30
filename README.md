@@ -248,31 +248,20 @@ JWT_SECRET=_jwt_secret
 
 ```
 
-my-app/
+src/
+|-- components/
+|   |-- BookingDates.jsx
+|   |-- Image.jsx
+|   |-- ...
+|-- pages/
+|   |-- IndexPage.jsx
+|   |-- LoginPage.jsx
+|   |-- PlacesPage.jsx
+|   |-- ...
+|-- App.jsx
+|-- index.jsx
+|-- ...
 
-├── models/
-
-│   ├── User.js
-
-│   ├── Place.js
-
-│   └── Booking.js
-
-├── index.js
-
-├── uploads/
-
-├── front-End/
-
-│   ├── public/
-
-│   └── src/
-
-├── server.js
-
-├── .env
-
-└── package.json
 
 ```
 
