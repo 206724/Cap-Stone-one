@@ -70,9 +70,9 @@ This project is an Airbnb-like application built with the MERN (MongoDB, Express
 
    ```bash
 
-   git clone https://github.com/yourusername/airbnb-clone.git
+   git clonehttps://github.com/206724/Cap-Stone-one.git
 
-   cd airbnb-clone
+   cd front-end-clone
 
    ```
 
@@ -210,15 +210,15 @@ JWT_SECRET=_jwt_secret
 
 
 
-- **POST** `/api/user-places`: Create a new property listing
+- **POST** `/API/user-places`: Create a new property listing
 
-- **PUT** `/api/places`: Update an existing property listing
+- **PUT** `/API/places`: Update an existing property listing
 
-- **GET** `/api/user-places`: Get all properties of the logged-in user
+- **GET** `/API/user-places`: Get all properties of the logged-in user
 
-- **GET** `/api/places/:id`: Get a specific property by ID
+- **GET** `/API/places/:id`: Get a specific property by ID
 
-- **GET** `/api/places`: Get all properties
+- **GET** `/API/places`: Get all properties
 
 
 
@@ -258,19 +258,9 @@ my-app/
 
 │   └── Booking.js
 
-├── middlewares/
+├── index.js
 
-│   └── auth.js
-
-├── controllers/
-
-│   └── placeController.js
-
-├── routes/
-
-│   ├── placeRoutes.js
-
-│   └── index.js
+├── uploads/
 
 ├── client/
 
