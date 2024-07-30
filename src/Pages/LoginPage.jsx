@@ -22,7 +22,9 @@ async function handleLoginSubmit(ev) {
       setRedirect(true);
     } catch (e) {
       alert('Login failed');
+      console.error(e)
     }
+    
   }
 
   if (redirect) {

@@ -9,7 +9,7 @@ import BookingDates from "../BookingDates";
 export default function BookingsPage() {
   const [bookings, setBookings] = useState([]);
   useEffect(() => {
-    axios.get('/bookings').then(response => {
+    axios.get('http://localhost:4000/bookings').then(response => {
       setBookings(response.data);
     });
   }, []);
@@ -19,7 +19,7 @@ export default function BookingsPage() {
       <div>
         {bookings?.length > 0 && bookings.map(booking => (
           <Link to={`/account/bookings/${booking._id}`} className="flex gap-4 bg-gray-200 rounded-2xl overflow-hidden" key={booking._id}>
-            <div className="">
+            <div className="w-48">
               {booking.place && <PlaceImg place={booking.place} />}
             </div>
             <div className="py-3 pr-3 grow">
